@@ -54,4 +54,26 @@ Player.prototype.getMarker = function() {
   return this.marker;
 }
 
+/**
+ * Increments the player's score by one
+ */
+Player.prototype.addScore = function() {
+  this.score++;
+}
+
+/**
+ * Resets the player's score to zero
+ */
+Player.prototype.resetScore = function() {
+  this.score = 0;
+}
+
+/**
+ * Gets the player's score
+ * @returns The player score
+ */
+Player.prototype.getScore = function() {
+  return this.score;
+}
+
 export default Player;
