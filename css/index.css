@@ -26,6 +26,10 @@ body, html, .container {
   text-align: center;
 }
 
+.player--active {
+  border: 2px solid green;
+}
+
 .player__name {
   font-size: 1.5rem;
   font-weight: 900;
