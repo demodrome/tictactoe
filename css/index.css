@@ -12,16 +12,16 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.container > * {
-  flex: 1 1 0;
+body, html, .container {
+  height: 100%;
 }
 
 .player {
-  border: 1px solid #ccc;
   padding: 1.5rem;
   text-align: center;
 }
@@ -35,3 +35,23 @@ body {
 .player__score {
   font-size: 2rem;
 }
+
+.gameboard {
+  display: flex;
+  justify-content: center;
+}
+
+.board__row {
+  display: flex;
+}
+
+.board__tile {
+  cursor: pointer;
+  font-size: 3rem;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
